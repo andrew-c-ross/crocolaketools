@@ -27,7 +27,7 @@ def download_file(url, local_filename):
             r.raise_for_status()
             total_size = int(r.headers.get('content-length', 0))
             with open(local_filename, "wb") as f, tqdm(
-                desc=local_filename,
+                desc=str(local_filename), # tqdm needs str not Path
                 total=total_size,
                 unit='iB',
                 unit_scale=True,
