@@ -1105,3 +1105,11 @@ params["ArgoBGC"] = [
 params["Argo2CROCOLAKE"] = {k : k for k in params["ArgoPHY"]} # copy of the list
 
 params["CROCOLAKE2Argo"] = copy.deepcopy(params["Argo2CROCOLAKE"])
+
+params['eMOLT2CROCOLAKE'] = {
+    'time': 'JULD',
+    'latitude': 'LATITUDE',
+    'longitude': 'LONGITUDE',
+    'depth': 'DEPTH',
+    'sea_water_temperature': 'TEMP'
+}
