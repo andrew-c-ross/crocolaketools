@@ -23,5 +23,6 @@ databases = [
     "Saildrones", 
     "OleanderXBT", 
     "IOOS_GLIDERS",
-    "SPOTS"
+    "SPOTS",
+    "eMOLT"
 ]
